@@ -15,7 +15,6 @@ function App() {
     return localStorage.getItem("theme") === "dark";
   });
 
-  // ✅ Define toggleDarkMode
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => {
       const newMode = !prevMode;
@@ -24,7 +23,6 @@ function App() {
     });
   };
 
-  // Apply dark mode to the body
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark-mode");
@@ -35,7 +33,6 @@ function App() {
 
   return (
     <div className={`App ${darkMode ? "dark-mode" : ""}`}>
-      {/* ✅ Pass darkMode and toggleDarkMode to NavBar */}
       <div className="navbar-container">
         <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
@@ -49,18 +46,15 @@ function App() {
           path="/" 
           element={
             <>
-              {/* ✅ Pass setSearchQuery to Banner */}
               <Banner onSearch={setSearchQuery} />  
               <div className="main-content">
                 <h1><b>Daily Digest</b></h1><hr />
-                {/* ✅ Pass searchQuery to NewsSection */}
                 <NewsSection searchQuery={searchQuery} />
               </div>
               <Connect />
             </>
           } 
         />
-        
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </div>
