@@ -1,10 +1,147 @@
 .App {
   text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.navbar .custom-button {
+  margin-left: 10px; /* Add space between buttons */
+}
+
+.main-content {
+  padding: 20px;
+}
+
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Apply dark mode to the entire app */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Fix: Ensure all pages have dark mode background */
+.dark-mode .favorites-container {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh; /* Ensures it covers the full page */
+  padding: 20px;
+}
+
+/* Optional: Style the title and text for better visibility */
+.favorites-title {
+  margin-top: 150px;
+  color: #ff5733; /* Adjust color for better visibility */
+  text-align: center;
+}
+
+.favorites-text {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.favorites-container {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;  /* Ensures it fills the screen */
+  background-color: white; /* Makes sure background is visible */
+  color: black; /* Ensures text is visible */
+}
+
+/* Custom button styles */
+.custom-button {
+  background-color: white !important; 
+  color: #ff5733 !important; /* Text color */
+  border: 1px solid #ff5733 !important; /* Border color */
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.custom-button:hover {
+  background-color: #ff5733 !important;
+  color: white !important;
+}
+
+.clickable-logo {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.clickable-logo:hover {
+  opacity: 0.7;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Adjust background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+}
+
+.news-tabs-container {
+  position: fixed;
+  top: 60px; /* Adjust based on NavBar height */
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  padding-top: 120px; /* Adjust to prevent content from being hidden */
+}
+
+.news-link:hover {
+  background-color: #ff5733;
+}
+
+
+/* ✅ Light Mode (Default Appearance) */
+.light-mode-tabs {
+  background-color: #f5f5f5 !important; /* Light background */
+}
+
+.light-mode-tabs .custom-nav-link {
+  color: #ff5733 !important; /* Keep text color */
+  background-color: #f5f5f5 !important;
+}
+
+/* Active Tab */
+.light-mode-tabs .custom-nav-link.active {
+  background-color: #ffffff !important;
+  color: black !important;
+}
+
+/* ✅ Dark Mode (Changes Only Background) */
+.dark-mode-tabs {
+  background-color: black !important; /* Change tabs' background in dark mode */
+}
+
+.dark-mode-tabs .custom-nav-link {
+  background-color: black !important; /* Dark background */
+  color: #ff5733 !important; /* Keep text color */
+}
+
+.dark-mode-tabs .custom-nav-link.active {
+  background-color: #222 !important; /* Slightly lighter for active tab */
+}
+
+.dark-mode-tabs .custom-nav-link:hover {
+  background-color: #333 !important; /* Hover effect */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,7 +162,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ff5733;
 }
 
 @keyframes App-logo-spin {

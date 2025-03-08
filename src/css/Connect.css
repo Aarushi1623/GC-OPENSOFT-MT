@@ -1,0 +1,39 @@
+/* Connect Section */
+.connect-banner {
+    background-color: #282c34; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  .connect-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 28px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff5733; /* Highlight color on hover */
+  }
+  
+  /* Copyright */
+  .copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  

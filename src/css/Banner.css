@@ -1,0 +1,75 @@
+.banner {
+  width: 100%;
+  height: 350px; /* Adjust height as needed */
+  background-image: url("https://media.istockphoto.com/id/1323067500/photo/gray-digital-network-image-background.jpg?s=612x612&w=0&k=20&c=E8FAt0zLXOZxEPPzUXkxYC-F0ppMb4Wvebpkf-svsw8="); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  margin-top: 150px;
+}
+
+/* Add a Dark Overlay similar to Connect Section */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(40, 44, 52, 0.8), rgba(40, 44, 52, 0.8)); /* Dark background #282c34 with transparency */
+}
+
+/* Make sure the content stays above the overlay */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 80px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.search-input {
+  width: 60%; /* Adjust width for a long search bar */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff5733;
+  color: white;
+  border: 1px solid #ff5733;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: #e04e2c;
+}

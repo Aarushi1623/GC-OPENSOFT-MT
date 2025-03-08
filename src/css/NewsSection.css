@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.news-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .news-category {
+    margin-bottom: 40px;
+  }
+  
+  .news-category h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .scroll-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .news-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    padding: 10px;
+  }
+  
+  .news-card {
+    flex: 0 0 280px;
+    max-width: 280px;
+    min-width: 280px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .news-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .news-image-container {
+    position: relative;
+  }
+  
+  .news-image-container img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .news-content {
+    padding: 15px;
+  }
+  
+  .news-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .news-content p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .favorite-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .favorite-btn.favorited {
+    color: red;
+  }
+  
+  a {
+    display: block;
+    margin-top: 10px;
+    color: #ff5733;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Scroll Buttons */
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff5733;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .scroll-btn.left {
+    left: 0;
+  }
+  
+  .scroll-btn.right {
+    right: 0;
+  }
+
+  /* Dark Mode Support */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-mode .news-card {
+    background: #1e1e1e;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode .news-content p {
+    color: #ccc;
+  }
+  
+  .dark-mode a {
+    color: #ff5733;
+  }
+  
+  .dark-mode .scroll-btn {
+    background:#ff5733;
+  }
+  
+  /* Favorite Button Fix */
+  .dark-mode .favorite-btn {
+    color: white;
+  }
+  
+  .dark-mode .favorite-btn.favorited {
+    color: red;
+  }
+  
+  
