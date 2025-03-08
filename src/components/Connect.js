@@ -29,7 +29,7 @@ function Connect() {
         </div>
 
         {/* Copyright Text */}
-        <p className="copyright">© 2024 YourWebsite. All Rights Reserved.</p>
+        <p className="copyright">© 2025 YourWebsite. All Rights Reserved.</p>
       </Container>
     </div>
   );
